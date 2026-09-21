@@ -415,19 +415,16 @@
 
     </footer>
 
-    <!-- Script JavaScript untuk membuka/menutup menu mobile -->
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const mobileLinks = document.querySelectorAll('.mobile-link');
 
-        // Toggle menu saat tombol ☰ diklik
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
             mobileMenu.classList.toggle('flex');
         });
 
-        // Otomatis menutup menu saat salah satu link diklik
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
