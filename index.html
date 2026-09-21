@@ -12,17 +12,19 @@
 
 <body class="min-h-screen bg-[#040806] p-5 bg-gradient-to-tr from-[#28472c] via-[#101811] to-[#040806]">
 
-    <nav class="max-w-7xl mx-auto">
+    <nav class="max-w-7xl mx-auto relative">
         <div class="flex justify-between items-center">
 
             <h1 class="text-lg md:text-xl text-white font-semibold">
                 MY PORTFOLIO
             </h1>
 
-            <button class="md:hidden text-2xl text-white hover:text-[#3fa052] transition duration-300">
+            <!-- Tombol Hamburger dengan id="menu-btn" -->
+            <button id="menu-btn" class="md:hidden text-2xl text-white hover:text-[#3fa052] transition duration-300 focus:outline-none">
                 ☰
             </button>
 
+            <!-- Menu Desktop -->
             <div class="hidden md:flex gap-5 text-white">
                 <a href="#about" class="px-3 py-2 rounded-lg hover:bg-[#3fa052] transition duration-300">
                     ABOUT ME
@@ -37,6 +39,21 @@
                 </a>
             </div>
 
+        </div>
+
+        <!-- Menu Mobile (Keluar saat tombol strip 3 diklik) -->
+        <div id="mobile-menu" class="hidden flex-col gap-3 mt-4 p-4 bg-[#101811] border border-[#143718] rounded-lg text-white md:hidden">
+            <a href="#about" class="mobile-link px-3 py-2 rounded-lg hover:bg-[#3fa052] transition duration-300">
+                ABOUT ME
+            </a>
+
+            <a href="#framework" class="mobile-link px-3 py-2 rounded-lg hover:bg-[#3fa052] transition duration-300">
+                FRAMEWORK
+            </a>
+
+            <a href="#project" class="mobile-link px-3 py-2 rounded-lg hover:bg-[#3fa052] transition duration-300">
+                PROJECT
+            </a>
         </div>
     </nav>
 
@@ -397,6 +414,27 @@
         </p>
 
     </footer>
+
+    <!-- Script JavaScript untuk membuka/menutup menu mobile -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        // Toggle menu saat tombol ☰ diklik
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+
+        // Otomatis menutup menu saat salah satu link diklik
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+            });
+        });
+    </script>
 
 </body>
 
