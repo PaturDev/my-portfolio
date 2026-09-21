@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Responsive Tailwind</title>
+</head>
+
+<body class="min-h-screen bg-[#040806] p-5 bg-gradient-to-tr from-[#28472c] via-[#101811] to-[#040806]">
+
+    <nav class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-center">
+
+            <h1 class="text-lg md:text-xl text-white font-semibold">
+                MY PORTFOLIO
+            </h1>
+
+            <button class="md:hidden text-2xl text-white hover:text-[#3fa052] transition duration-300">
+                ☰
+            </button>
+
+            <div class="hidden md:flex gap-5 text-white">
+                <a href="#about" class="px-3 py-2 rounded-lg hover:bg-[#3fa052] transition duration-300">
+                    ABOUT ME
+                </a>
+
+                <a href="#framework" class="px-3 py-2 rounded-lg hover:bg-[#3fa052] transition duration-300">
+                    FRAMEWORK
+                </a>
+
+                <a href="#project" class="px-3 py-2 rounded-lg hover:bg-[#3fa052] transition duration-300">
+                    PROJECT
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <hr class="mt-5 border-white/30">
+
+    <main class="max-w-7xl mx-auto">
+
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8 items-center">
+
+            <div class="flex flex-col items-center">
+
+                <img src="img/sy.jpeg" alt="Gambar" class="rounded-full w-[16rem] md:w-[20rem] lg:w-[20rem]
+                    hover:scale-105 transition duration-500 aspect-[1/1] object-cover">
+
+                <div class="text-center border rounded-lg border-[#143718] border-2 mt-3
+                    hover:border-[#3fa052] transition duration-300">
+
+                    <h2 class="p-4 text-[#f3f3f3]">
+                        1+ Month of Coding
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="text-right lg:ml-16">
+
+                <h6 class="text-[#3fa052] text-sm md:text-lg font-medium">
+                    Hello, My Name is
+                </h6>
+
+                <h2 class="text-4xl md:text-6xl lg:text-7xl text-[#f3f3f3] font-bold mt-2">
+                    Patur Marcelio Limbong
+                </h2>
+
+                <p class="text-[#f3f3f3] text-base md:text-lg mt-5 font-medium">
+                    I'm a passionate web developer with experience in creating
+                    responsive and user-friendly websites.
+                </p>
+
+                <div class="flex justify-end items-center gap-2 mt-4">
+
+                    <a href="https://www.instagram.com/marceliooooooo/" target="_blank"
+                        class="bg-[#f3f3f3] rounded-full hover:scale-110 transition duration-300">
+
+                        <img class="w-10" src="img/inst.png" alt="Instagram">
+
+                    </a>
+
+                    <a href="https://github.com/PaturDev" target="_blank"
+                        class="bg-[#f3f3f3] rounded-full hover:scale-110 transition duration-300">
+
+                        <img class="w-10" src="img/git.png" alt="GitHub">
+
+                    </a>
+
+                    <a href="https://www.youtube.com/@TheGranpa25" target="_blank"
+                        class="bg-[#f3f3f3] rounded-full hover:scale-110 transition duration-300">
+
+                        <img class="w-10 p-2" src="img/yt.png" alt="YouTube">
+
+                    </a>
+
+                    <a href="https://www.tiktok.com/@patur_l" target="_blank"
+                        class="bg-[#f3f3f3] rounded-full hover:scale-110 transition duration-300">
+
+                        <img class="w-10" src="img/tt.png" alt="TikTok">
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="about" class="mt-16">
+
+            <div class="text-center mb-8">
+
+                <h2 class="text-3xl md:text-4xl font-bold text-white">
+                    About Me
+                </h2>
+
+                <div class="w-16 h-1 bg-[#3fa052] mx-auto mt-3 rounded-full"></div>
+
+                <p class="text-gray-300 mt-4 max-w-2xl mx-auto">
+                    Sedikit tentang saya, perjalanan saya dalam dunia coding,
+                    dan hal-hal yang sedang saya pelajari.
+                </p>
+
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+                <div class="border border-[#143718] rounded-lg p-6
+                    hover:border-[#3fa052] hover:-translate-y-2
+                    transition duration-300">
+
+                    <h3 class="text-xl md:text-2xl text-[#3fa052] font-semibold">
+                        Who Am I?
+                    </h3>
+
+                    <p class="text-[#f3f3f3] mt-4 leading-relaxed">
+                        Saya adalah seorang yang tertarik dengan dunia
+                        programming dan sedang mengembangkan kemampuan
+                        saya dalam membuat website.
+                    </p>
+
+                </div>
+
+                <div class="border border-[#143718] rounded-lg p-6
+                    hover:border-[#3fa052] hover:-translate-y-2
+                    transition duration-300">
+
+                    <h3 class="text-xl md:text-2xl text-[#3fa052] font-semibold">
+                        My Journey
+                    </h3>
+
+                    <p class="text-[#f3f3f3] mt-4 leading-relaxed">
+                        Saya mulai belajar coding dari dasar dan sekarang
+                        sedang memperdalam HTML, CSS, JavaScript,
+                        dan Tailwind CSS.
+                    </p>
+
+                </div>
+
+                <div class="border border-[#143718] rounded-lg p-6
+                    hover:border-[#3fa052] hover:-translate-y-2
+                    transition duration-300">
+
+                    <h3 class="text-xl md:text-2xl text-[#3fa052] font-semibold">
+                        What I Learn
+                    </h3>
+
+                    <p class="text-[#f3f3f3] mt-4 leading-relaxed">
+                        Saya sedang mempelajari bagaimana membuat website
+                        yang responsive, interaktif, dan nyaman digunakan
+                        di berbagai ukuran layar.
+                    </p>
+
+                </div>
+
+                <div class="border border-[#143718] rounded-lg p-6
+                    hover:border-[#3fa052] hover:-translate-y-2
+                    transition duration-300">
+
+                    <h3 class="text-xl md:text-2xl text-[#3fa052] font-semibold">
+                        My Goal
+                    </h3>
+
+                    <p class="text-[#f3f3f3] mt-4 leading-relaxed">
+                        Tujuan saya adalah terus meningkatkan kemampuan
+                        programming dan membuat project yang semakin
+                        kompleks.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="framework" class="mt-20">
+
+            <div class="text-center">
+
+                <h2 class="text-3xl md:text-4xl font-bold text-white">
+                    Framework & Skills
+                </h2>
+
+                <div class="w-16 h-1 bg-[#3fa052] mx-auto mt-3 rounded-full"></div>
+
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-5 mt-8">
+
+                <div class="border border-[#143718] rounded-lg p-6 text-center
+                    hover:bg-[#143718] transition duration-300">
+
+                    <h3 class="text-[#3fa052] text-xl font-bold">
+                        HTML
+                    </h3>
+
+                    <p class="text-gray-300 mt-2">
+                        Structure
+                    </p>
+
+                </div>
+
+                <div class="border border-[#143718] rounded-lg p-6 text-center
+                    hover:bg-[#143718] transition duration-300">
+
+                    <h3 class="text-[#3fa052] text-xl font-bold">
+                        CSS
+                    </h3>
+
+                    <p class="text-gray-300 mt-2">
+                        Styling
+                    </p>
+
+                </div>
+
+                <div class="border border-[#143718] rounded-lg p-6 text-center
+                    hover:bg-[#143718] transition duration-300">
+
+                    <h3 class="text-[#3fa052] text-xl font-bold">
+                        JavaScript
+                    </h3>
+
+                    <p class="text-gray-300 mt-2">
+                        Otw
+
+                    </p>
+
+                </div>
+
+                <div class="border border-[#143718] rounded-lg p-6 text-center
+                    hover:bg-[#143718] transition duration-300">
+
+                    <h3 class="text-[#3fa052] text-xl font-bold">
+                        Tailwind
+                    </h3>
+
+                    <p class="text-gray-300 mt-2">
+                        UI Styling
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="project" class="mt-20">
+
+            <div class="text-center">
+
+                <h2 class="text-3xl md:text-4xl font-bold text-white">
+                    My Project
+                </h2>
+
+                <div class="w-16 h-1 bg-[#3fa052] mx-auto mt-3 rounded-full"></div>
+
+                <p class="text-gray-300 mt-4">
+                    Beberapa project yang telah saya buat.
+                </p>
+
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+
+                <div class="border border-[#143718] rounded-lg h-64
+                    flex items-center justify-center
+                    hover:border-[#3fa052] hover:-translate-y-2
+                    transition duration-300">
+
+                    <p class="text-gray-500 text-lg">
+                        Otw
+
+                    </p>
+
+                </div>
+
+                <div class="border border-[#143718] rounded-lg h-64
+                    flex items-center justify-center
+                    hover:border-[#3fa052] hover:-translate-y-2
+                    transition duration-300">
+
+                    <p class="text-gray-500 text-lg">
+                        Otw
+
+                    </p>
+
+                </div>
+
+                <div class="border border-[#143718] rounded-lg h-64
+                    flex items-center justify-center
+                    hover:border-[#3fa052] hover:-translate-y-2
+                    transition duration-300">
+
+                    <p class="text-gray-500 text-lg">
+                        Otw
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="mt-20 mb-16">
+
+            <div class="text-center">
+
+                <h2 class="text-3xl md:text-4xl font-bold text-white">
+                    My Achievement
+                </h2>
+
+                <div class="w-16 h-1 bg-[#3fa052] mx-auto mt-3 rounded-full"></div>
+
+                <p class="text-gray-300 mt-4">
+                    Pencapaian dan pengalaman yang saya dapatkan.
+                </p>
+
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+
+                <div class="border border-[#143718] rounded-lg h-48
+                    flex items-center justify-center
+                    hover:border-[#3fa052] hover:-translate-y-2
+                    transition duration-300">
+
+                    <p class="text-gray-500 text-lg">
+                        Otw
+
+                    </p>
+
+                </div>
+
+                <div class="border border-[#143718] rounded-lg h-48
+                    flex items-center justify-center
+                    hover:border-[#3fa052] hover:-translate-y-2
+                    transition duration-300">
+
+                    <p class="text-gray-500 text-lg">
+                        Otw
+
+                    </p>
+
+                </div>
+
+                <div class="border border-[#143718] rounded-lg h-48
+                    flex items-center justify-center
+                    hover:border-[#3fa052] hover:-translate-y-2
+                    transition duration-300">
+
+                    <p class="text-gray-500 text-lg">
+                        Otw
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <hr class="border-gray-700">
+
+    <footer class="mt-5 text-center text-[#f3f3f3]">
+
+        <p>
+            &copy; 2026 My Portfolio. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
